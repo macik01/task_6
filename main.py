@@ -10,7 +10,7 @@ and_index = vs_letter.index(and_leter)
 result = vs_letter[st_index:and_index + 1]
 print(result)'''
 #task 6.2
-seconds = int(input("Введіть кількість секунд - "))
+'''seconds = int(input("Введіть кількість секунд - "))
 if seconds < 0 or seconds >= 8640000:
     print("Помилка меньше 0 або більше 8640000")
 else:
@@ -22,4 +22,14 @@ else:
     seconds = seconds % 60
     day_word = "день" if days == 1 else "дні" if 2 <= days <= 4 else "днів"
     formatted_time = f"{days} {day_word}, {str(hours).zfill(2)}:{str(minutes).zfill(2)}:{str(seconds).zfill(2)}"
-    print(formatted_time)
+    print(formatted_time)'''
+#task 6.3
+number = int(input("Введіть ціле число: "))
+while number > 9:
+    i = 1
+    for digit in str(number):
+        i *= int(digit)
+    number = i
+print(number)
+
+
